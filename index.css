@@ -5,11 +5,28 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: #fff !important;
 }
-
+.hero-group {
+  border: 1.5px solid rgba(243, 207, 0, 0.36);
+  border-radius: 50%;
+  width: 146px;
+  height: 146px;
+  top: -52px;
+  right: -42px;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+html,body
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+
 .header-component {
   background-color: #f3cf00;
 }
@@ -454,5 +471,80 @@ footer {
 .food-img-wrapper .hero-section-food-name {
   font-weight: 700;
   font-family: "Satoshi-Bold";
+}
+@media (max-width: 767px) {
+  .hero-first-wrapper {
+    width: 100%;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  .hero-text {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .hero-second-wrapper {
+    padding-right: 0;
+  }
+  .hero-cta-btn-wrapper {
+    width: 60%;
+    margin: auto;
+  }
+  .section-title {
+    margin-bottom: 2rem !important;
+    font-size: 25px;
+  }
+  .suggest-section .section-title {
+    width: 100%;
+  }
+  .ads-text {
+    font-size: 45px;
+  }
+  .advert-card-wrapper {
+    height: unset;
+  }
+  .trending-recipe-section .section-title {
+    font-size: 25px;
+    text-align: left !important;
+  }
+  .half-recipe,
+  .full-recipe {
+    margin-bottom: 1rem !important;
+    height: 350px;
+  }
+  .picked-recipe-section .section-title {
+    font-weight: 500;
+    font-size: 27px;
+  }
+  .pro-section-img {
+    object-fit: cover;
+    width: 100%;
+  }
+  .pro-right-container {
+    width: 100%;
+    margin-left: 0;
+  }
+  .kitchen-pro-text {
+    font-size: 30px;
+    margin-top: 12px;
+  }
+  .kitchen-pro-content {
+    font-size: 17px;
+  }
+  .kitchen-pro-btn {
+    width: 100%;
+  }
+  .copyright-text {
+    margin-top: 1.5rem;
+    margin-bottom: 1.7rem;
+
+  }
+  .hero-img {
+    object-fit: cover;
+    width: 100%;
+  }
   
+  .hero-group {
+    top: -52px;
+    right: -42px;
+  }
 }
