@@ -125,3 +125,56 @@ const handleRecipeChange = (section, type) => {
     }
   }
 }
+
+var utils = window.fizzyUIUtils
+
+var carousel = document.querySelector('.trending-recipes-gallery')
+var flkty = new Flickity(carousel, {
+  prevNextButtons: false,
+  pageDots: false,
+  contain: true
+})
+
+var previousButton = document.querySelector('.trending-recipe-prev-btn')
+previousButton.addEventListener('click', function () {
+  flkty.previous()
+})
+// next
+var nextButton = document.querySelector('.trending-recipe-next-btn')
+nextButton.addEventListener('click', function () {
+  flkty.next()
+})
+
+var picked_carousel = document.querySelector('.picked-recipes-gallery')
+var picked_flkty = new Flickity(picked_carousel, {
+  prevNextButtons: false,
+  pageDots: false,
+  contain: true
+})
+
+var picked_previousButton = document.querySelector('.picked-recipe-prev-btn')
+picked_previousButton.addEventListener('click', function () {
+  picked_flkty.previous()
+})
+// next
+var picked_nextButton = document.querySelector('.picked-recipe-next-btn')
+picked_nextButton.addEventListener('click', function () {
+  picked_flkty.next()
+})
+
+var latest_carousel = document.querySelector('.latest-recipes-gallery')
+var latest_flkty = new Flickity(latest_carousel, {
+  prevNextButtons: false,
+  pageDots: false,
+  contain: true
+})
+
+var latest_previousButton = document.querySelector('.latest-recipe-prev-btn')
+latest_previousButton.addEventListener('click', function () {
+  latest_flkty.previous()
+})
+// next
+var latest_nextButton = document.querySelector('.latest-recipe-next-btn')
+latest_nextButton.addEventListener('click', function () {
+  latest_flkty.next()
+})
