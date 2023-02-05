@@ -730,8 +730,8 @@
       </p>
     </div>
     <!-- Modal -->
-    <div class="modal fade " id="recipeModal" tabindex="-1" role="dialog"
-      aria-labelledby="recipeModalTitle" aria-hidden="true">
+    <div class="modal fade " id="recipeModal" tabindex="-1" role="dialog" aria-labelledby="recipeModalTitle"
+      aria-hidden="true">
       <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
         <div class="modal-content pt-0 pb-3 px-3">
           <div class="d-flex justify-content-end">
@@ -741,13 +741,15 @@
             </div>
           </div>
           <div>
-            
+
             <!-- <video width="100%" height="240" controls autoplay>
               <source src="https://www.youtube.com/watch?v=QhRNI077VBY" type="video/mp4"/>
               <source src="movie.ogg" type="video/ogg" />
               Your browser does not support the video tag.
             </video> -->
-          <iframe width="100%" height="500" src="https://www.youtube.com/embed/QhRNI077VBY?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="100%" height="500" title="YouTube video player" frameborder="0"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
 
           </div>
 
@@ -757,6 +759,16 @@
       </div>
     </div>
   </footer>
+  <script>
+    jQuery('#recipeModal').on('show.bs.modal', function (e) {
+      jQuery('#recipeModal iframe').attr('src', 'https://www.youtube.com/embed/QhRNI077VBY?autoplay=1&mute=1');
+    });
+    jQuery('#recipeModal').on('hidden.bs.modal', function (e) {
+      // do something...
+      jQuery('#recipeModal iframe').attr("src", jQuery("#recipeModal  iframe").attr("src"));
+    });
+  </script>
+  
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   <script src="index.js"></script>
 
