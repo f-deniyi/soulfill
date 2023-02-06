@@ -38,7 +38,7 @@ for (i = 0; i < picked_recipes.length; i++) {
   }
 }
 
-function showRecipe (evt, contentId) {
+function showRecipe(evt, contentId) {
   var i, options, recipes
   options = document.getElementsByClassName('select-option')
   for (i = 0; i < options.length; i++) {
@@ -178,3 +178,12 @@ var latest_nextButton = document.querySelector('.latest-recipe-next-btn')
 latest_nextButton.addEventListener('click', function () {
   latest_flkty.next()
 })
+
+
+function openNav() {
+  document.getElementById("menubar").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("menubar").style.width = "0";
+}

@@ -40,8 +40,28 @@
         <button class="header-login-btn">Login</button>
       </div>
     </div>
+    <div class="d-block d-md-none">
+      <h3 style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</h3>
+    </div>
   </header>
   <!--header-->
+
+  <!---Mobile Menu--->
+  <div id="menubar" class="menubar py-3 ">
+    <div class="d-flex justify-content-end text-white text-white text-center px-3">
+      <a href="javascript:void(0)" class="closebtn" style="font-size: 25px; font-weight: 700;"
+        onclick="closeNav()">&times;</a>
+    </div>
+    <div class="mb-3 text-center">
+      <a href="#">Our Home Cooks</a>
+    </div>
+    <div class="mb-3 text-center">
+      <a href="#">Search</a>
+    </div>
+    <div class="mb-3 text-center">
+      <button class="header-login-btn">Login</button>
+    </div>
+  </div>
 
   <!--section--->
   <section class="hero-section px-3 px-md-5 d-flex align-items-center justify-content-between">
@@ -768,7 +788,7 @@
       jQuery('#recipeModal iframe').attr("src", jQuery("#recipeModal  iframe").attr("src"));
     });
   </script>
-  
+
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   <script src="index.js"></script>
 
